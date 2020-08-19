@@ -2748,3 +2748,18 @@ img#shops_preview {
     background:rgba(204,204,204,0.25);
     border:1px dashed #999;
 }
+#footer_buttons a {
+    vertical-align:top;
+}
+#duolingo_invite {
+    color:#fff;
+    font-size:0.75em;
+    background:#6bb300;
+    text-decoration:none;
+    border-radius:5px;
+    padding:5px;
+}
+#duolingo_invite img {
+    width:15px;
+    height:15px;
+}
