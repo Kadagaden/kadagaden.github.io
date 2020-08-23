@@ -87,7 +87,7 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: #fefefe;
     font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
     color: #000;
@@ -115,12 +115,12 @@ input, select, textarea {
 }
 
 a {
-    color: #0090c5;
-    text-decoration: underline;
+    color: #0d4d9c;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+    color:#1a71dc;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,7 +147,6 @@ h3 {
 
 b, strong {
     font-weight: 600;
-    color: #444;
 }
 
 i, em {
@@ -191,6 +190,17 @@ p, ul, ol, dl, table {
     margin: 0 auto;
     max-width: 100%;
     width: 1400px;
+    text-align:center;
+}
+
+article {
+}
+
+.block-wrapper {
+    width:70%;
+    display:inline-block;
+    text-align:left;
+    margin:auto;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1705,8 +1715,8 @@ button.large,
 /* List */
 
 ul {
-    list-style: disc;
-    padding-left: 1em;
+    /*list-style: disc;*/
+    /*padding-left: 1em;*/
 }
 
 ul li {
@@ -1909,7 +1919,7 @@ ul.menu li:first-child {
 }
 
 #main-wrapper {
-    background: #fff;
+    background: #fefefe;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     padding: 0 0 2em 0;
 }
@@ -1922,6 +1932,7 @@ ul.menu li:first-child {
 
 #header {
     position: relative;
+    text-align:center;
 }
 
 /* Logo */
@@ -1931,7 +1942,7 @@ ul.menu li:first-child {
 }
 
 #logo h1 {
-    background: #fff;
+    background: #fefefe;
     color: #000;
     border:solid 1px #000;
     border-radius: 6px;
@@ -1952,6 +1963,46 @@ ul.menu li:first-child {
     vertical-align: middle;
     margin: 0 0 0 1.25em;
 }
+
+#logo span a i {
+    opacity:0;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#logo span a i:hover {
+    font-size:1.3em;
+    color: #0d4d9c;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 /* Nav */
 
@@ -1991,11 +2042,11 @@ ul.menu li:first-child {
 }
 
 #nav ul li:hover a, #nav ul li:hover span {
-    background: #fff;
+    background: #fefefe;
 }
 
 #nav ul li.active a, #nav ul li.active span {
-    background: #fff;
+    background: #fefefe;
 }
 
 #nav ul li.current a {
@@ -2681,29 +2732,9 @@ ul.menu li:first-child {
 
 }
 /* added */
-.pt {
-    font-size:1.5em;
-    font-weight:bold;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-    text-align:center;
-}
-.img_preview{
-    display:block;
-    max-width: 60%;
-    border-radius:5px;
-    border:solid 1px #999;
-}
-.divider {
-    widht: 90%;
-    height:3px;
-    margin-top:5px;
-    margin-bottom:25px;
-    border-bottom: 1px dashed #000;
+#myworks {
+    color:#757575;
+    margin-bottom:10px;
 }
 #logo span a {
     font-size:1.5em;
@@ -2716,50 +2747,120 @@ ul.menu li:first-child {
 #logo span {
     display:inline;
 }
-.newsblock{
-    margin:1em auto;
-}
-#shop_wrapper {
-    text-align:center;
-}
-.shop_preview{
-    display:inline-block;
-    padding: 2em;
-}
-img#shops_preview {
-    max-width: 600px;
-}
-.shop_preview img {
-    max-width: 500px;
-    border-radius:5px;
-    border:solid 1px #999;
-}
-.shop_preview p {
-    font-size:2em;
-    margin-bottom:0.5em;
-}
-.shop_preview span {
-    max-width: 500px;
-}
-#shogi_mod_block {
+#shogi-mod-block {
     margin-top:-1em;
-    margin-left: 1em;
+    margin-bottom:1em;
     padding:0.5em;
     background:rgba(204,204,204,0.25);
     border:1px dashed #999;
+    text-align:left;
 }
-#footer_buttons a {
+
+#shogi-mod-block img {
+    margin:auto;
+    display:block;
+    width:90%;
+    padding-bottom:1em;
+}
+#footer_buttons {
+    text-align:center;
+}
+#footer_buttons a, #footer_buttons span {
     vertical-align:top;
 }
-#duolingo_invite {
+#duolingo_button {
     color:#fff;
     font-size:0.75em;
-    background:#6bb300;
+    background:#68ad01;
     text-decoration:none;
     border-radius:5px;
     padding:5px;
 }
-#duolingo_invite img {
+#duolingo_button img {
     width:15px;
     height:15px;
+}
+#lichess_button {
+    color:#fff;
+    font-size:0.75em;
+    background:#161512;
+    text-decoration:none;
+    border-radius:5px;
+    padding:5px;
+}
+#lichess_button img {
+    width:15px;
+    height:15px;
+}
+#bnet_button {
+    color: #000f5a;
+    font-size: 0.75em;
+    background: #c5c5c5;
+    text-decoration:none;
+    border-radius:5px;
+    padding:5px;
+}
+#bnet_button img {
+    width:15px;
+    height:15px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 40px;
+	height: 1px;
+}
+
+
+.divider-header
+{
+	position: relative;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	height: 1px;
+}
+
+.divider-content
+{
+	position: relative;
+	margin-top: 10px;
+    margin-bottom: 20px;
+	height: 1px;
+}
+
+.divider-footer
+{
+	position: relative;
+	margin-top: 20px;
+    margin-bottom: 30px;
+	height: 1px;
+}
+
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: white;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
 }
