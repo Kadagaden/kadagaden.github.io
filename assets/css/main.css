@@ -2864,3 +2864,6 @@ ul.menu li:first-child {
 	border-bottom: 1px solid rgb(48,49,51);
 	border-right: 1px solid rgb(48,49,51);
 }
+#shop-banner {
+    width:99%;
+}
