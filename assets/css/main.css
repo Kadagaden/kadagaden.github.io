@@ -2867,3 +2867,9 @@ ul.menu li:first-child {
 #shop-banner {
     width:99%;
 }
+.shop_categories {
+    font-size:0.8em;
+}
+.shop_categories::after {
+    content:' | ';
+}
