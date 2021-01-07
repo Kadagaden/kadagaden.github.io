@@ -34,7 +34,9 @@ body {
 }
 
 ol, ul {
-    list-style: none;
+    list-style: disc;
+    word-break: break-word;
+    list-style-position: inside;
 }
 
 blockquote, q {
@@ -2359,18 +2361,7 @@ ul.menu li:first-child {
         padding: 0;
     }
 
-    /* Nav */
-
-    #page-wrapper {
-        -moz-backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -moz-transition: -moz-transform 0.5s ease;
-        -webkit-transition: -webkit-transform 0.5s ease;
-        -ms-transition: -ms-transform 0.5s ease;
-        transition: transform 0.5s ease;
-        padding-bottom: 1px;
+    /* Nav */ #page-wrapper { -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden; -moz-transition: -moz-transform 0.5s ease; -webkit-transition: -webkit-transform 0.5s ease; -ms-transition: -ms-transform 0.5s ease; transition: transform 0.5s ease; padding-bottom: 1px;
     }
 
     #navToggle {
@@ -2762,11 +2753,18 @@ ul.menu li:first-child {
     width:90%;
     padding-bottom:1em;
 }
+ul#shogi-list {
+   list-style-type: disc;
+    list-style-position: inside;
+}
 #footer_buttons {
     text-align:center;
 }
 #footer_buttons a, #footer_buttons span {
     vertical-align:top;
+}
+.footer-buttons {
+    white-space: nowrap;
 }
 #duolingo_button {
     color:#fff;

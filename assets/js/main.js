@@ -39,7 +39,7 @@
 					'<a href="#navPanel" class="toggle"></a>' +
 				'</div>'
 			)
-				.appendTo($body);
+				//.appendTo($body); // NOTE: Commented out. no need for sidebar menu
 
 		// Panel.
 			$(
