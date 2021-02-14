@@ -244,6 +244,10 @@ article {
         width: 90%;
     }
 
+    .block-wrapper {
+        width:80%;
+    }
+
 }
 
 @media screen and (max-width: 736px) {
@@ -251,6 +255,11 @@ article {
     .container {
         width: 100%;
     }
+
+    .block-wrapper {
+        width:100%;
+    }
+
 
 }
 
@@ -2954,6 +2963,13 @@ a.choosen {
 .post_screenshot img {
     max-width: 250px;
 }
+@media screen and (max-width: 736px) {
+    .post_screenshot img {
+        max-width: 200px;
+    }
+
+}
+
 .post_screenshot p {
     font-size:0.75em;
     color:#666;
