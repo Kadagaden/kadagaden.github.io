@@ -39,13 +39,14 @@ ol, ul {
     /*list-style: disc;*/
     word-break: break-word;
     list-style-position: inside;
+    list-style:none;
 }
 
 .color-with-marker {
   list-style-position: inside;
 }
 .color-with-marker ::marker {
-  color: #999;
+  color: #6a6a6a;
 }
 
 blockquote, q {
@@ -132,7 +133,7 @@ a {
 }
 
 a:hover {
-    color:#1a71dc;
+    color:#2f6ebb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,14 +148,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2 {
-    font-size: 3em;
-    margin: 0 0 1.1em 0;
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
     line-height: 1em;
 }
 
 h3 {
-    font-size: 1.1em;
-    margin: 0 0 1em 0;
+    font-size: 1.05em;
+    margin: 1.5em 0 .5em 1em;
 }
 
 h3 i {
@@ -197,7 +198,7 @@ blockquote {
 }
 
 p, ul, ol, dl, table {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 /* Container */
@@ -224,8 +225,11 @@ article {
     /*border-left:6px solid #000;*/
     text-transform:uppercase;
     color:#000;
-    padding:0.1em 0 0.2em 0.5em;
+    /*padding:0.1em 0 0.2em 0.5em;*/
     border-radius:3px;
+}
+.block-content {
+    margin-left:20px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -1950,7 +1954,12 @@ ul.menu li:first-child {
 /* Wrappers */
 
 #header-wrapper {
-    padding: 1em 0 1em 0;
+    padding: 0.25em 0 0.25em 0;
+    background:#fefefe;
+    z-index:999;
+    position:fixed;
+    top: 0;
+    width:100%;
 }
 
 #features-wrapper {
@@ -1961,6 +1970,7 @@ ul.menu li:first-child {
     background: #fefefe;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
     /*padding-bottom: 0.5em;*/
+    margin-top:100px;
 }
 
 #footer-wrapper {
@@ -1996,7 +2006,7 @@ ul.menu li:first-child {
 
 #logo span {
     font-weight: 800;
-    line-height: 4.5em;
+    line-height: 3.5em;
     letter-spacing: 0.025em;
     font-size: 0.9em;
     vertical-align: middle;
@@ -2762,10 +2772,6 @@ ul.menu li:first-child {
 /* added */
 #about_designer {display:none;}
 
-#myworks {
-    color:#757575;
-    margin-bottom:10px;
-}
 #logo span a {
     font-size:1.5em;
     color:#000;
@@ -2777,11 +2783,16 @@ ul.menu li:first-child {
 #logo span {
     display:inline;
 }
+#shogi-mod-toggle {
+    color:#0d4d9c;
+    cursor: pointer;
+}
 #shogi-mod-block {
+    display:none;
     margin-top:-1em;
     margin-bottom:1em;
     padding:0.5em;
-    background:rgba(204,204,204,0.25);
+    /*background:rgba(204,204,204,0.25);*/
     border:1px dashed #999;
     text-align:left;
 }
@@ -2853,16 +2864,16 @@ ul#shogi-list {
 .divider-header
 {
 	position: relative;
-	margin-top: 10px;
-    margin-bottom: 10px;
+	margin-top: 1px;
+    margin-bottom: 1px;
 	height: 1px;
 }
 
 .divider-content
 {
 	position: relative;
-	margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 	height: 1px;
 }
 
@@ -2916,15 +2927,39 @@ ul#shogi-list {
 	border-right: 1px solid rgb(48,49,51);
 }
 
+#shop-button {
+    margin-left:15px;
+    text-align:center;
+    background:#0d4d9c;
+    color: #fff;
+    padding: 0.75em;
+    font-weight:600;
+    font-size:0.85em;
+    border-radius:8px;
+}
+
+#shop-button:hover {
+    background:#2f6ebb;
+}
 #shop-banner {
-    width:99%;
+    margin-left:15px;
+    width:90%;
+    max-width:90%;
+    border:1px dotted black;
 }
-.shop_categories {
-    font-size:0.8em;
+#shop-cat-list-toggle {
+    margin-left:15px;
+    font-weight:600;
+    font-size:0.9em;
+    cursor: pointer;
 }
-.shop_cat_sep {
-    color:#999;
-    font-size:0.8em;
+#shop-cat-list {
+    display:none;
+    font-size:0.9em;
+    margin-left:30px;
+}
+#shop-hungarian {
+    margin-left:15px;
 }
 #donate_buttons a {
    display: inline;
@@ -3146,4 +3181,27 @@ a.choosen {
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.pushdown {
+    height:40px;
+}
+.indent {
+    margin-left: 1em;
+}
+#things_i_do li {
+    list-style:none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#things_i_do li i {
+    margin-right:8px;
+    background: #6a6a6a;
+    border-radius: 100%;
+    color: #fefefe;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    width: 1.5em;
 }
