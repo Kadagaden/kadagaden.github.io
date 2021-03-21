@@ -1530,6 +1530,12 @@ footer {
     margin: 2.5em 0 0 0;
 }
 
+#Ka_logo {
+    margin-top:-10px;
+    border:1px solid #000;
+    border-radius:2px;
+}
+
 /* Forms */
 
 form label {
@@ -1955,7 +1961,8 @@ ul.menu li:first-child {
 
 #header-wrapper {
     padding: 0.25em 0 0.25em 0;
-    background:#fefefe;
+    /*background:#fefefe;*/
+    background:#fbfbfb;
     z-index:999;
     position:fixed;
     top: 0;
