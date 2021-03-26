@@ -148,14 +148,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin: 0 0 0.5em 0;
     line-height: 1em;
 }
 
 h3 {
     font-size: 1.05em;
-    margin: 1.5em 0 .5em 1em;
+    margin: 0.5em 0 0.25em 0.75em;
 }
 
 h3 i {
@@ -2879,15 +2879,15 @@ ul#shogi-list {
 .divider-content
 {
 	position: relative;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 	height: 1px;
 }
 
 .divider-footer
 {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 60px;
     margin-bottom: 30px;
 	height: 1px;
 }
@@ -2915,7 +2915,7 @@ ul#shogi-list {
 	width: 14px;
 	height: 14px;
 	transform: rotate(45deg);
-	background-color: white;
+	background-color: #fbfbfb;
 	border-bottom: 1px solid rgb(48,49,51);
 	border-right: 1px solid rgb(48,49,51);
 }
@@ -2929,30 +2929,35 @@ ul#shogi-list {
 	width: 14px;
 	height: 14px;
 	transform: rotate(225deg);
-	background-color: white;
+	background-color: #fefefe;
 	border-bottom: 1px solid rgb(48,49,51);
 	border-right: 1px solid rgb(48,49,51);
 }
 
-#shop-button {
+.shop-button {
+    display:block;
+    max-width:90%;
+    width:90%;
     margin-left:15px;
     text-align:center;
-    background:#0d4d9c;
-    color: #fff;
+    color:#0d4d9c;
+    background: #fff;
     padding: 0.75em;
     font-weight:600;
     font-size:0.85em;
     border-radius:8px;
+    border: 1px solid #999;
 }
 
-#shop-button:hover {
+.shop-button:hover {
     background:#2f6ebb;
+    color:#fff;
 }
 #shop-banner {
     margin-left:15px;
     width:90%;
     max-width:90%;
-    border:1px dotted black;
+    border:1px solid #999;
 }
 #shop-cat-list-toggle {
     margin-left:15px;
@@ -2966,10 +2971,19 @@ ul#shogi-list {
     margin-left:30px;
 }
 #shop-hungarian {
+    margin-top:50px;
     margin-left:15px;
 }
 #donate_buttons a {
    display: inline;
+}
+
+#donatebuttons > a > img {
+    border: 1px solid #999;
+    border-radius:13px;
+}
+#donatebuttons > a > img:hover {
+    filter:saturate(200%);
 }
 
 #post_title {
@@ -2977,13 +2991,14 @@ ul#shogi-list {
     font-size: 1.6em;
     font-weight:700;
     text-align: center;
-    margin-bottom:1em;
+    margin-top:1.5em;
+    margin-bottom:0.3em;
 }
 #post_date {
     text-align:center;
     color:#666;
     font-size:0.6em;
-    margin-top:-30px;
+    margin-bottom:0.3em;
 }
 #post_content {
     text-align:justify;
@@ -3211,4 +3226,7 @@ a.choosen {
     line-height: 1.5em;
     text-align: center;
     width: 1.5em;
+}
+#works_title {
+    margin-bottom: 0.75em;
 }
