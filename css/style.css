@@ -30,7 +30,7 @@ html {
     transition: color 500ms, background-color 500ms;
 }
 html[data-theme='dark'] {
-    /*background: #000;*/
+    background: #000;
     filter: invert(1) hue-rotate(180deg)
 }
 html[data-theme='dark'] img:not(.icon-theme-switcher) {
@@ -956,7 +956,7 @@ pre {
 }
 
 .image-popup:hover {
-  opacity: .7;
+  /*opacity: .7;*/
 }
 
 .fh5co-call-to-action {

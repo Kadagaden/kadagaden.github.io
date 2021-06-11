@@ -7,9 +7,14 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
+  background: #000000;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  }
+
+html[data-theme='dark'] .mfp-bg {
+    background: #ffffff;
+}
 
 .mfp-wrap {
   top: 0;
@@ -141,6 +146,10 @@ button::-moz-focus-inner {
   .mfp-close:active {
     top: 1px; }
 
+html[data-theme='dark'] .mfp-close {
+    filter:invert(1);
+}
+
 .mfp-close-btn-in .mfp-close {
   color: #333333; }
 
@@ -151,6 +160,7 @@ button::-moz-focus-inner {
   padding-right: 6px;
   width: 100%; }
 
+
 .mfp-counter {
   position: absolute;
   top: 0;
@@ -158,6 +168,10 @@ button::-moz-focus-inner {
   color: #cccccc;
   font-size: 12px;
   line-height: 18px; }
+
+html[data-theme='dark'] .mfp-counter {
+    filter:invert(1);
+}
 
 .mfp-arrow {
   position: absolute;
