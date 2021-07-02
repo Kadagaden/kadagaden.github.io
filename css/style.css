@@ -1369,13 +1369,9 @@ html[data-theme='dark'] #webshop-illus:hover {
 * typing anim:
 * https://dev.to/monalishamondol/text-typing-animation-effect-using-html-css-3d52
 */
-#typing {
+h1#hello-typing {
     width: 0ch;
-    color: white;
     float: left;
-    /*font-family: sans-serif;*/
-    /*font-weight:bold;*/
-    /*font-size: 60px;*/
     overflow: hidden;
     white-space: nowrap;
     animation: typing 1s steps(20) 1s forwards;
