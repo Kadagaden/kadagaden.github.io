@@ -12,10 +12,6 @@
   filter: alpha(opacity=85);
   }
 
-html[data-theme='dark'] .mfp-bg {
-    background: #ffffff;
-}
-
 .mfp-wrap {
   top: 0;
   left: 0;
