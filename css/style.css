@@ -26,6 +26,7 @@ html {
 --pic-frame-color: var(--text-color);
 --shape-color:var(--text-color);
 --dotted-bg: #b9b9b9;
+--categories: #2b2b2b;
 }
 
 html[data-theme='dark'] {
@@ -36,6 +37,7 @@ html[data-theme='dark'] {
 --pic-frame-color: #827b68;
 --shape-color:var(--text-color);
 --dotted-bg: #585858;
+--categories: #2b2b2b;
 }
 
 
@@ -1491,7 +1493,7 @@ div#theme-switcher img {
 
 
 .img-responsive, .owl-item {
-    border: 1px dashed var(--pic-frame-color);
+    border: 1px dotted var(--pic-frame-color);
 }
 #shop-cat-list {
     list-style-type:none;
@@ -1606,6 +1608,7 @@ small a {
 #fh5co-work .fh5co-work-item .fh5co-overlay-text .fh5co-categories li {
     font-size:13px;
     text-shadow:none;
+    color: var(--categories);
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-bg {
     top: 5px;
