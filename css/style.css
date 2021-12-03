@@ -343,7 +343,7 @@ pre {
   }
 }
 #fh5co-intro .fh5co-intro-sub {
-    background:var(--bg-color);
+    /*background:var(--bg-color);*/
 }
 @media screen and (max-width: 768px) {
   #fh5co-intro .fh5co-intro-sub {
@@ -1204,130 +1204,130 @@ a > img.fh5co-align-center {
 }
 
 .fh5co-tab-menu-icon {
-  font-size: 20px;
-  position: relative;
-  float: left;
-  margin-right: 10px;
+    font-size: 20px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-tab-menu-icon {
-    margin-top: 0px;
-  }
+    .fh5co-tab-menu-icon {
+        margin-top: 0px;
+    }
 }
 
 /* Pricing Tables */
 .fh5co-pricing-table-1 {
-  font-family: "PT Mono", monospace;
+    font-family: "PT Mono", monospace;
 }
 @media screen and (max-width: 992px) {
-  .fh5co-pricing-table-1 .fh5co-pricing-table-item {
-    margin-bottom: 20px !important;
-  }
+    .fh5co-pricing-table-1 .fh5co-pricing-table-item {
+        margin-bottom: 20px !important;
+    }
 }
 @media screen and (max-width: 768px) {
-  .fh5co-pricing-table-1 .fh5co-pricing-table-item {
-    margin-bottom: 20px !important;
-    float: left;
-    width: 100%;
-  }
+    .fh5co-pricing-table-1 .fh5co-pricing-table-item {
+        margin-bottom: 20px !important;
+        float: left;
+        width: 100%;
+    }
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-body,
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading {
-  text-align: center;
-  float: left;
-  width: 100%;
-  padding: 1em 2em;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 1em 2em;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading {
-  background: var(--primary-color);
+    background: var(--primary-color);
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading h3 {
-  font-size: 70px;
-  position: relative;
-  display: inline-block;
-  color: #ffffff !important;
+    font-size: 70px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff !important;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading h3 sup {
-  position: absolute;
-  top: 2px;
-  margin-left: -7px;
+    position: absolute;
+    top: 2px;
+    margin-left: -7px;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading h3 sup, .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading h3 span {
-  font-size: 14px;
-  text-transform: uppercase;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-heading p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item.fh5co-best-offer .fh5co-pricing-table-item-heading {
-  background: var(--primary-color);
-  color: #ffffff;
+    background: var(--primary-color);
+    color: #ffffff;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-body {
-  border: 2px solid #ccc;
-  border-top: none;
+    border: 2px solid #ccc;
+    border-top: none;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-body ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item .fh5co-pricing-table-item-body ul li {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 10px 0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
 }
 .fh5co-pricing-table-1 .fh5co-pricing-table-item.fh5co-best-offer .fh5co-pricing-table-item-body {
-  border: 2px solid var(--primary-color);
-  border-top: none;
+    border: 2px solid var(--primary-color);
+    border-top: none;
 }
 
 .fh5co-no-margin-bottom {
-  margin-bottom: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .fh5co-letter-space {
-  letter-spacing: 4px;
+    letter-spacing: 4px;
 }
 
 .fh5co-link {
-  font-family: "PT Mono", monospace;
+    font-family: "PT Mono", monospace;
 }
 .fh5co-link > i {
-  margin-right: 5px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+    margin-right: 5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .fh5co-link:hover > i {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 .fh5co-btn-other-option {
-  float: left;
-  margin-right: 10px;
+    float: left;
+    margin-right: 10px;
 }
 
 .fh5co-other-option {
-  margin-top: 12px;
-  display: inline-block;
-  float: left;
+    margin-top: 12px;
+    display: inline-block;
+    float: left;
 }
 .fh5co-other-option .fh5co-or {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fh5co-uppercase-heading-sm {
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--text-color);
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-color);
 }
 
 /* --------------------------------------------------------------------------*/
@@ -1350,30 +1350,31 @@ div#theme-switcher img {
 #icon-light,#icon-dark {
     display:none;
 }
-#about-me {
-  background-color: var(--bg-color);
-  background-image: radial-gradient(circle, var(--dotted-bg) 15%, transparent 10%), radial-gradient(circle, var(--dotted-bg) 15%, transparent 10%);
-  background-size: 12px 12px;
-  background-position: 0 0, 0px 0px;
-  transition:0.1s;
+#hero-wrap {
+    display:flex;
 }
-#about-me:hover {
-  /*transition:0.25s;*/
-  /*background-size: 20px 20px;*/
+#hero-left {
+    background:var(--bg-color);
 }
-
-@media screen and (max-width: 991px) {
-    #about-me {
-        background:none;
-    }
+#hero-right {
+    background-image: radial-gradient(circle, var(--dotted-bg) 15%, transparent 10%), radial-gradient(circle, var(--dotted-bg) 15%, transparent 10%);
+    background-size: 12px 12px;
+    background-position: 0 0, 0px 0px;
+    transition:0.1s;
+}
+.sidecol {
+    margin-left:20px;
+    margin-right:10px;
+    flex:50%;
 }
 
 #shapes {
-    display:inline-block;
     position:relative;
     top: -80px;
     left: 30px;
 }
+
+
 .bg-line {
     opacity:0;
     display:inline-block;
@@ -1382,12 +1383,15 @@ div#theme-switcher img {
     width:5px;
     position:relative;
 }
+/*#line1,#line2,#line3,#line4,#line5,#line6 {position:relative;}*/
 #line1 { top:60px; }
 #line2 { top:60px; left:250px; }
 #line3 { top:175px; height: 200px; }
 #line4 { top:100px; left:270px; }
 #line5 { top:150px; }
 #line6 { top:180px; left:230px; height:150px;}
+
+
 #circle{
     display:inline-block;
     position:relative;
@@ -1442,14 +1446,33 @@ div#theme-switcher img {
 #vrect-bottomright {
     display:inline-block;
     position:relative;
-    top: 210px;
-    left: -260px;
+    top: 103px;
+    left: 180px;
     height:100px;
     width:50px;
     background-color:var(--shape-color);
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
+
+@media screen and (max-width: 991px) {
+    #vrect-topright {
+        top: -60px;
+        left: 220px;
+    }
+    #vrect-bottomleft {
+        top: 104px;
+        left: 70px;
+    }
+    #vrect-bottomright {
+        top: 104px;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero-right {display:none};
+}
 
 @keyframes wave{
     to{
@@ -1460,16 +1483,17 @@ div#theme-switcher img {
 
 
 
-#about-me:hover #vrect-topright {
+#hero-right:hover #vrect-topright {
     animation:none;
-    top: 100px;
-    left: -110px;
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    /*top: 100px;*/
+    /*left: -110px;*/
+    /*clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);*/
 }
-#about-me:hover #shapes {
-    transform:rotate(180deg);
-    top:240px;
-    left:-100px;
+#hero-right:hover #shapes {
+    transform:rotate(45deg);
+    position:relative;
+    top:-10px!important;
+    left:80px;
     animation:falling 0.2s;
     animation-fill-mode: forwards;
 }
@@ -1480,7 +1504,7 @@ div#theme-switcher img {
     }
 }
 
-#about-me:hover .bg-line {
+#hero-right:hover .bg-line {
     opacity:1;
     animation:bglines 0.2s infinite;
 }
@@ -1593,6 +1617,7 @@ small a {
 }
 
 
+
 /* --------------------------------------------------------------------------*/
 /* OVERRIDES */
 /* --------------------------------------------------------------------------*/
@@ -1647,3 +1672,6 @@ span.copyToClipboard {
 span.copyToClipboard:hover {
   cursor: pointer;
 }
+
+
+
