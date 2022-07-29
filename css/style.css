@@ -11,10 +11,14 @@
 }
 
 :root {
-    --primary-color: #f8c537;
-    --btn-primary-text:#353535;
-    --btn-primary-text-hover:#000;
-    --selection-text:#000;
+    /*--primary-color: #f8c537;*/
+    --primary-color: #B0585A;
+    /*--btn-primary-text:#353535;*/
+    /*--btn-primary-text-hover:#000;*/
+    --btn-primary-text:#f5f5f5;
+    --btn-primary-text-hover:#f5f5f5;
+    --btn-primary-hover:#BF6062;
+selection-text:#000;
 }
 
 
@@ -22,22 +26,28 @@ html {
 --bg-color: #fff;
 --text-color: #2b2b2b;
 --link-hover: var(--text-color);
---whoami-text:var(--text-color);
+/*--whoami-text:var(--text-color);*/
+--whoami-text:#f5f5f5;
 --pic-frame-color: var(--text-color);
 --shape-color:var(--text-color);
 --dotted-bg: #b9b9b9;
---categories: #2b2b2b;
+/*--categories: #2b2b2b;*/
+--thumbnail-text: #f5f5f5;
+--categories: #f5f5f5;
 }
 
 html[data-theme='dark'] {
 --bg-color: #252525;
 --text-color: #f5f5f5;
 --link-hover: var(--primary-color);
---whoami-text:var(--bg-color);
+/*--whoami-text:var(--bg-color);*/
+--whoami-text:#f5f5f5;
 --pic-frame-color: #827b68;
 --shape-color:var(--text-color);
 --dotted-bg: #585858;
---categories: #2b2b2b;
+/*--categories: #2b2b2b;*/
+--thumbnail-text: #f5f5f5;
+--categories: #f5f5f5;
 }
 
 
@@ -94,8 +104,9 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 a:hover {
-  color: var(--link-hover);
- text-shadow: 0 0 .9px var(--link-hover), 0 0 .9px var(--link-hover);
+  /*color: var(--link-hover);*/
+ /*text-shadow: 0 0 .9px var(--link-hover), 0 0 .9px var(--link-hover);*/
+  color: var(--primary-color);
 }
 
 figure.fh5co-with-caption {
@@ -831,7 +842,7 @@ pre {
   color:var(--btn-primary-text);
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  background: var(--primary-color);
+  background: var(--btn-primary-hover);
   color:var(--btn-primary-text-hover);
   text-shadow:none;
   font-weight:700;
@@ -1624,11 +1635,13 @@ small a {
 
 #fh5co-work .fh5co-work-item .fh5co-overlay-bg {
     /*background: rgba(55,63,183,0.90);*/
-    background: rgba(248, 197, 55, 0.9);
+    /*background: rgba(248, 197, 55, 0.9);*/
+    background: rgba(176, 88, 90, 0.9);
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-text h2  {
     font-size:22px!important;
     text-shadow:none;
+    color:var(--thumbnail-text);
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-text .fh5co-categories li {
     font-size:13px;
