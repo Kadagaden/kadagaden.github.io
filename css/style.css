@@ -297,7 +297,10 @@ pre {
 }
 #fh5co-main-nav ul > li.fh5co-active a {
   /*color: #7c7c7c;*/
-  border-bottom: 2px solid var(--primary-color);
+  /*border-bottom: 2px solid var(--primary-color);*/
+  /*font-weight: bold;*/
+  /*color: var(--primary-color);*/
+
 }
 #fh5co-main-nav ul > li:last-child {
   margin: 0;
@@ -590,6 +593,7 @@ pre {
 }
 .fh5co-footer-social li a:hover {
     font-weight:normal;
+    border-bottom: 2px solid var(--primary-color)!important;
 }
 #fh5co-footer .fh5co-copyright {
   color: var(--text-color);
@@ -1531,7 +1535,7 @@ div#theme-switcher img {
     border: 1px dotted var(--pic-frame-color);
 }
 #shop-cat-list {
-    list-style-type:none;
+    list-style-type:square;
     font-size: 0.9em;
     line-height:26px;
     margin-left:0;
