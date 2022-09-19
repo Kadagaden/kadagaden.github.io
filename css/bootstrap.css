@@ -1696,7 +1696,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 990px;
+    width: 1000px;
   }
 }
 
@@ -2176,7 +2176,7 @@ pre code {
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 33.3333%;
   }
 
   .col-md-7 {
