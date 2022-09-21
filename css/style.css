@@ -135,13 +135,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h5 {font-weight:bold;}
 
 h1, .h1 {
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 70px;
+  line-height: 80px;
 }
 @media screen and (max-width: 768px) {
   h1, .h1 {
-    font-size: 50px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 52px;
   }
 }
 
@@ -151,8 +151,8 @@ h2, .h2 {
 }
 @media screen and (max-width: 768px) {
   h2, .h2 {
-    font-size: 40px;
-    line-height: 58px;
+    font-size: 30px;
+    line-height: 48px;
   }
 }
 
@@ -162,8 +162,8 @@ h3, .h3 {
 }
 @media screen and (max-width: 768px) {
   h3, .h3 {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 
@@ -173,19 +173,9 @@ h4, .h4 {
 }
 @media screen and (max-width: 768px) {
   h4, .h4 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 22px;
   }
-}
-
-h5, .h5 {
-  font-size: 20px;
-  line-height: 34px;
-}
-
-h6, .h6 {
-  font-size: 16px;
-  line-height: 24px;
 }
 
 ul, ol {
@@ -933,11 +923,18 @@ small a {
 .page-section span {
     background: var(--bg-page-section);
     /*font-weight: 600;*/
-    font-size:82px;
-    line-height:100px;
+    font-size:70px;
+    line-height:80px;
     margin-left: 20px;
     color:var(--primary-color);
 }
+@media screen and (max-width: 768px) {
+    .page-section span {
+        font-size: 50px;
+        line-height:60px;
+    }
+}
+
 
 /*- FILTER OPTIONS -*/
 ul#filterOptions {
