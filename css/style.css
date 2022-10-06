@@ -222,6 +222,7 @@ pre {
 /* override bootstrap's row margin */
 .row {margin-left:0;margin-right:0;}
 
+
 #fh5co-header {
   margin-top: 2em;
   margin-bottom: 3em;
@@ -313,6 +314,18 @@ pre {
     margin: 0  0px;
   }
 }
+@media screen and (max-width: 430px) {
+  #fh5co-main-nav ul > li > a {
+      font-size:0.9em;
+  }
+}
+@media screen and (max-width: 360px) {
+  #fh5co-main-nav ul > li > a {
+      font-size:0.8em;
+  }
+}
+
+
 #fh5co-main-nav ul > li > a {
     color:var(--text-color);
 }
@@ -843,7 +856,7 @@ div#theme-switcher img {
 #shop-cat-list {
     list-style-type:none;
     font-size: 0.9em;
-    line-height:26px;
+    /*line-height:26px;*/
     margin-left:0;
     margin-bottom:1.2em;
 }
@@ -1159,7 +1172,7 @@ span.copyToClipboard:hover {
     0% {opacity:0;}
     100% {opacity:1;}
 }
-.fader {animation: 500ms linear 0s 1 forwards fader;}
+.fader {animation: 150ms linear 0s 1 forwards fader;}
 
 .item {opacity:0;}
 .item:hover {
@@ -1191,4 +1204,24 @@ span.copyToClipboard:hover {
     }
 }
 
+#wGridCont {
+    display: grid;
+    /*grid-template-columns: repeat(1, 1fr);*/
+      /*grid-template-columns: repeat(auto-fit, 484px);*/
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+}
+#wGridCont div:nth-child(1){ grid-area: 1 / 1 / 2 / 3; }
+#wGridCont div:nth-child(2){ grid-area: 2 / 1 / 3 / 2; }
+#wGridCont div:nth-child(3){ grid-area: 2 / 2 / 3 / 3; }
 
+#wGridCont img {width:75%;}
+
+@media screen and (max-width: 768px) {
+    #wGridCont div:nth-child(3) {display:none;}
+}
+
+
+/* fix bootstrap.css */
+#wGridCont:before {display:none;}
