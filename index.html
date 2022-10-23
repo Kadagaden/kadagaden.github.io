@@ -120,6 +120,7 @@
                         <li><a href="#" class="other">Other</a></li>
                         <li><a href="#" class="poster">Poster & Framed Art</a></li>
                         <li><a href="#" class="ui">UI</a></li>
+                        <li><a href="#" class="video">Video</a></li>
                         <li><a href="#" class="wallpaper">Wallpaper</a></li>
                     </ul>
                 </div>
@@ -127,6 +128,15 @@
 
             <div id="container-portfolio" class="container fadeIn">
                 <div class="bg-dotted" id="pGridCont">
+
+                    <div class="item anim video">
+                            <div class="fh5co-work-item js-fh5co-work-item" id="item_goldeneye007">
+                                <img src="images/portfolio/goldeneye007_preview.png" alt="Image" class="img-responsive img-portfolio">
+                                <i class="fa-solid fa-play playbutton pb-gold img-portfolio"></i>
+                                <!--<video src="images/portfolio/goldeneye007.mp4" class="img-responsive img-portfolio" autoplay loop muted></video>-->
+                            </div>
+                    </div>
+
 
                     <div class="item poster">
                             <div class="fh5co-work-item js-fh5co-work-item" id="item_the_sitting_bird">
@@ -300,6 +310,32 @@
 
 
             <!-- DETAILS -->
+            <div class="container work-details" id="goldeneye007">
+                <div class="row details-block">
+                    <div class="btn details-close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="col-md-8"><iframe width="560" height="315" src="https://www.youtube.com/embed/nlyUwMMEWfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="details-info">
+                        <div class="col-md-6 col-sm-6">
+                            <h2 class="h4 details-st">Info</h2>
+                            <p>GoldenEye 007 videogame intro remake.</p>
+                            <p>Published: 2022/10</p>
+                            <ul>
+                                <li><a href="https://twitter.com/Kadaga_/status/1583432894646996992">Publication tweet</a></li>
+                                <li><a href="https://youtu.be/iZy63vxe5G0">Original GoldenEye 007 intro</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h2 class="h4 details-st">Share</h2>
+                            <ul class="share-opt-wrap">
+                                <li><a class="shareOnTwitter" href="#" target="_blank"><i class="fa-brands fa-twitter"></i>Share on twitter</a></li>
+                                <li class="copyToClipboard"><i class="fa-regular fa-copy"></i>Copy link to clipboard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="container work-details" id="the_sitting_bird">
                 <div class="row details-block">
                     <div class="btn details-close"><i class="fa-solid fa-xmark"></i></div>
@@ -944,7 +980,7 @@
 
             <div class="container work-details" id="shogi_ka_mod_apk">
                 <div class="row details-block">
-                    <div class="btn details-close"><i class="fa-regular fa-xmark"></i></div>
+                    <div class="btn details-close"><i class="fa-solid fa-xmark"></i></div>
                     <div class="col-md-8"><img src="images/portfolio/shogi_apk.png" class="img-responsive img-details" alt="image"></div>
                     <div class="details-info">
                         <div class="col-md-6 col-sm-6">
@@ -1021,6 +1057,7 @@
                         <ul class="fh5co-footer-social">
                             <li><a href="https://twitter.com/Kadaga_"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
                             <li><a href="https://instagram.com/kadagainsta"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCsGCjDZyWfT_iv1UnFQ1FCA"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
                             <li><a href="https://github.com/Ka-hu"><i class="fa-brands fa-github"></i> Github</a></li>
                             <li><a href="donate.html"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</a></li>
                         </ul>
@@ -1230,6 +1267,20 @@
                 // show all elements that do share filter
                 $('#pGridCont').children('div.' + filter).show();
             }
+            // Stop html5 video playback
+            //$(".pvid").get(0).pause();
+            //$('.pvid').get(0).currentTime = 0;
+
+            // Stop embedded/iframe YouTube videos
+            var iframes = document.querySelectorAll('iframe');
+            // reinitializing the values of the src attribute of every iframe to stop the YouTube video.
+            for (let i = 0; i < iframes.length; i++) {
+                if (iframes[i] !== null) {
+                    var temp = iframes[i].src;
+                   iframes[i].src = temp;
+                }
+             }
+
         });
 
         // --- Close details when clicking on the image/video
@@ -1247,11 +1298,32 @@
                 // show all elements that do share filter
                 $('#pGridCont').children('div.' + filter).show();
             }
+            // Stop html5 video playback (timeout needed!)
+            //setTimeout(function(){
+            //   $(".pvid").get(0).pause();
+            //    $('.pvid').get(0).currentTime = 0;
+            //}, 250);
+
         });
 
         //  --- Close details when clicking on a filter
         $('#filterOptions li a').click(function() {
             $('.work-details').hide();
+
+            // Stop html5 video playback
+            //$(".pvid").get(0).pause();
+            //$('.pvid').get(0).currentTime = 0;
+
+            // Stop embedded/iframe YouTube videos
+            var iframes = document.querySelectorAll('iframe');
+            // reinitializing the values of the src attribute of every iframe to stop the YouTube video.
+            for (let i = 0; i < iframes.length; i++) {
+                if (iframes[i] !== null) {
+                    var temp = iframes[i].src;
+                   iframes[i].src = temp;
+                }
+             }
+
         });
 
         // -------------------------------------------

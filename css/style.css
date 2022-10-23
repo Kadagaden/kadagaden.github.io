@@ -894,6 +894,17 @@ div#theme-switcher img {
     transition:0.5s;
 }
 
+.playbutton {
+    font-size: 1.5em;
+    color: rgb(255 255 255 / 85%);
+    position: relative;
+    top: -105px;
+    left: 115px;
+}
+.pb-gold {
+    -webkit-text-stroke: 2px #957808;
+}
+
 /*
 * typing anim:
 * https://dev.to/monalishamondol/text-typing-animation-effect-using-html-css-3d52
@@ -995,6 +1006,9 @@ small a {
     border-left:4px solid var(--dark-gray);
     border-right:4px solid var(--dark-gray);
     margin-top:-4px;
+}
+.details-block > div > iframe {
+    margin-top:10px;
 }
 .details-close {
     float:right;
