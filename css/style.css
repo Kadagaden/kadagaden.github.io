@@ -864,6 +864,7 @@ div#theme-switcher img {
     color:var(--text-color);
     border:none;
 }
+.hint {font-size: 0.8em; margin-left:1em;}
 
 #shop-cat-list li a:hover {color:var(--primary-color);}
 #shop-cat-list li a i {
@@ -871,7 +872,7 @@ div#theme-switcher img {
     color:#444;
 }
 .cta-btn {
-    margin-left: 1em;
+    /*margin-left: 1em;*/
     box-shadow: 3px 5px 0px 0px #2e2e2e;
     padding: 10px;
     /*border-radius: 10px;*/
@@ -889,6 +890,10 @@ div#theme-switcher img {
 .cta-opensea {
     background:var(--brand-blue);
 }
+.cta-teepublic {
+    background:#222;
+}
+
 #webshop-illus:hover {
     filter:hue-rotate(145deg);
     transition:0.5s;
