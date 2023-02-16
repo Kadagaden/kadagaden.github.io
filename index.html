@@ -68,7 +68,7 @@
             <div id="container-hero" class="container fadeIn">
                 <div id="hero-wrap">
                     <div class="sidecol row" id="hero-left">
-                        <h4><span id="hero-whoami">I'm a freelance graphic designer, digital artist, and open source software contributor.</span></h4>
+                        <div id="hero-whoami">I'm a freelance graphic designer, digital artist, and open source software contributor.</div>
                         <h4 class="hero-sub">About my work</h4>
                         <ul>
                             <li>I do graphic design (logo, website, UI, icon, etc.).</li>
@@ -1261,7 +1261,7 @@
     $(window).scroll(function () {
 
         // section titles sliding in
-        $('.page-section span').each(function () {
+        $('.page-section').each(function () {
             if (isScrolledIntoView(this) === true) {
                 $(this).addClass('slideFromLeft');
             }
