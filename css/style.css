@@ -1122,11 +1122,11 @@ ul.info-buy-links li a i {
 .share-opt-wrap li:hover {
   color: var(--primary-color);
 }
-.share-opt-wrap li a {
+.share-opt-wrap li a, a.imgNewTab {
     color:var(--text-color);
     border-bottom: none;
 }
-.share-opt-wrap li a:hover {
+.share-opt-wrap li a:hover, a.imgNewTab:hover {
     color:var(--primary-color);
 }
 .share-opt-wrap li i, .share-opt-wrap li a i {
