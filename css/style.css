@@ -880,20 +880,19 @@ div#theme-switcher img {
     /*border-radius: 10px;*/
     font-size: 0.8em;
     color:#fff;
+    width:90%;
+    height:60px;
+    background:#efefef;
 }
 .cta-btn:hover, .cta-btn:active, .cta-btn:focus, .cta-btn:visited {
     color:#fff;
-    box-shadow: 3px 5px 0px 0px #2e2e2e;
-    filter: brightness(1.1);
+    box-shadow: 3px 5px 0px 0px var(--primary-color);
+    /*filter: brightness(1.1);*/
 }
-.cta-redbubble {
-    background:#d3424b;
-}
-.cta-opensea {
-    background:var(--brand-blue);
-}
-.cta-teepublic {
-    background:#222;
+.cta-btn img {
+    width:100%;
+    height:100%;
+    object-fit:contain;
 }
 
 #webshop-illus:hover {
@@ -1261,8 +1260,6 @@ span.copyToClipboard:hover {
 #wGridCont div:nth-child(1){ grid-area: 1 / 1 / 2 / 3; }
 #wGridCont div:nth-child(2){ grid-area: 2 / 1 / 3 / 2; }
 #wGridCont div:nth-child(3){ grid-area: 2 / 2 / 3 / 3; }
-
-#wGridCont img {width:75%;}
 
 @media screen and (max-width: 768px) {
     #wGridCont div:nth-child(3) {display:none;}
