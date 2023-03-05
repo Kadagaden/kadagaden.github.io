@@ -71,10 +71,10 @@
                         <div id="hero-whoami">I'm a freelance graphic designer, digital artist, and open source software contributor.</div>
                         <h4 class="hero-sub">About my work</h4>
                         <ul>
-                            <li>I do graphic design (logo, website, UI, icon, etc.).</li>
-                            <li>I make digital art.
+                            <li>I make graphic designs (logo, website, UI, icon, etc.).</li>
+                            <li>I make art (painting, vector, petscii, pixel art).
                             <li>I made graphics for chess variants (piece sets and boards).</li>
-                            <li>I develop static websites (small, personal, or portfolio sites).</li>
+                            <li>I create static websites (small, personal or portfolio sites).</li>
                             <li>I contribute to open source software (see my <a href="https://github.com/Ka-hu">Github profile</a>).</li>
                             <li>I make designs in various themes for T-shirts, stickers, and other merch. Check out my <a href="https://upkah.redbubble.com">Redbubble shop</a> or my <a href="https://www.teepublic.com/user/kadaga">Teepublic store</a>.</li>
                         </ul>
@@ -371,6 +371,7 @@
                             <ul class="info-buy-links">
                                 <li><a href="https://www.redbubble.com/shop/ap/141025443"><i class="fa-regular fa-image"></i>Buy prints on Redbubble</a></li>
                                 <li><a href="https://www.teepublic.com/poster-and-art/40153046-m-dread-covert-art-petscii-c64-remake-original-art"><i class="fa-regular fa-image"></i>Buy prints on TeePublic</a></li>
+                                <li><a href="https://www.inprnt.com/gallery/kadaga/metroid-dread-petscii-c64-pixel-art"><i class="fa-regular fa-image"></i>Buy prints on INPRNT</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -432,6 +433,7 @@
                             <ul class="info-buy-links">
                                 <li><a href="https://www.redbubble.com/shop/ap/140582550"><i class="fa-regular fa-image"></i>Buy prints on Redbubble</a></li>
                                 <li><a href="https://www.teepublic.com/poster-and-art/39975390-sm64-petscii-c64-original-artwork"><i class="fa-regular fa-image"></i>Buy prints on TeePublic</a></li>
+                                <li><a href="https://www.inprnt.com/gallery/kadaga/super-mario-64-petscii-c64-pixel-art"><i class="fa-regular fa-image"></i>Buy prints on INPRNT</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -461,6 +463,7 @@
                             <ul class="info-buy-links">
                                 <li><a href="https://www.redbubble.com/shop/ap/140674021"><i class="fa-regular fa-image"></i>Buy prints on Redbubble</a></li>
                                 <li><a href="https://www.teepublic.com/poster-and-art/39976326-god-of-war-ragnarok-petscii-c64-original-artwork"><i class="fa-regular fa-image"></i>Buy prints on TeePublic</a></li>
+                                <li><a href="https://www.inprnt.com/gallery/kadaga/god-of-war-ragnarok-petscii-c64-pixel-art"><i class="fa-regular fa-image"></i>Buy prints on INPRNT</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -784,6 +787,7 @@
                             <ul class="info-buy-links">
                                 <li><a href="https://www.redbubble.com/shop/ap/140673556"><i class="fa-regular fa-image"></i>Buy prints on Redbubble</a></li>
                                 <li><a href="https://www.teepublic.com/poster-and-art/39976600-south-park-petscii-c64-original-artwork"><i class="fa-regular fa-image"></i>Buy prints on TeePublic</a></li>
+                                <li><a href="https://www.inprnt.com/gallery/kadaga/south-park-petscii-c64-pixel-art"><i class="fa-regular fa-image"></i>Buy prints on INPRNT</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-sm-6">
@@ -1269,7 +1273,7 @@
             <div class="container">
                 <div class="page-section" id="webshop"><span>Webshops</span></div>
             </div>
-             <div class="container" id="wGridCont">
+             <div class="container">
                  <div>I have a Redbubble shop and a Teepublic store where you can find hundreds of designs/artworks on thousands of products (T-shirts, stickers, cases, pillows, art prints, etc.). I also have a shop on INPRNT if you are interested in gallery quality art prints.</div>
 
                     <a class="cta-btn cta-redbubble btn" href="https://upkah.redbubble.com" target="_blank"><img src="images/logo-redbubble.png"/></a>
@@ -1409,12 +1413,14 @@
             }
         });
 
-        // items fading in
-        $('.item').each(function () {
-            if (isScrolledIntoView(this) === true) {
-                $(this).addClass('fader');
-            }
-        });
+        /***
+            // items fading in
+            $('.item').each(function () {
+                if (isScrolledIntoView(this) === true) {
+                    $(this).addClass('fader');
+                }
+            });
+        ***/
 
     });
 
@@ -1595,6 +1601,7 @@
         $( "#container-hero" ).removeClass( "fadeIn" );
         $( "#container-pfilter" ).removeClass( "fadeIn" );
         $( "#fh5co-portfolio" ).removeClass( "fadeIn" );
+        $( "#container-portfolio" ).removeClass( "fadeIn" );
         $( "#fh5co-webshop" ).removeClass( "fadeIn" );
         $( "#fh5co-footer" ).removeClass( "fadeIn" );
         $( "#hello-typing" ).hide();

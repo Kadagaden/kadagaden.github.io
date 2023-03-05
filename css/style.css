@@ -469,6 +469,7 @@ pre {
 }
 
 #fh5co-footer {
+padding-top: 4em;
   padding-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
@@ -880,9 +881,10 @@ div#theme-switcher img {
     /*border-radius: 10px;*/
     font-size: 0.8em;
     color:#fff;
-    width:90%;
-    height:60px;
+    width:50%;
+    height:50px;
     background:#efefef;
+    margin: 20px 0 0 20px;
 }
 .cta-btn:hover, .cta-btn:active, .cta-btn:focus, .cta-btn:visited {
     color:#fff;
@@ -1183,7 +1185,7 @@ span.copyToClipboard:hover {
 }
 
 #fh5co-portfolio, #fh5co-webshop {
-    margin-bottom:4em;
+    margin-bottom:2em;
 }
 #fh5co-footer .container {
     border-top: 4px solid var(--dark-gray);
@@ -1219,7 +1221,7 @@ span.copyToClipboard:hover {
 }
 .fader {animation: 150ms linear 0s 1 forwards fader;}
 
-.item {opacity:0;}
+/*.item {opacity:0;}*/
 .item:hover {
     transition: transform .2s;
     transform: scale(1.1);
