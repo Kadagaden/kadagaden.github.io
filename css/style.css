@@ -3,7 +3,8 @@
 
 
 :root {
-    --primary-color: #347fc1;
+    --primary-color:#b1585a;
+    /*--primary-color: #347fc1;*/
     /*--primary-color: #B0585A;*/
     --btn-primary-text:#f5f5f5;
     --btn-primary-text-hover:#f5f5f5;
@@ -513,7 +514,7 @@ padding-top: 4em;
 .btn {
   font-family: "Quicksand", sans-serif;
   font-weight:700;
-  border-bottom: none !important;
+  /*border-bottom: none !important;*/
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-border-radius: 4px;
@@ -527,8 +528,8 @@ padding-top: 4em;
 }
 .btn:hover, .btn:focus, .btn:active {
   /*box-shadow: none;*/
-  outline: none !important;
-  border-color: transparent;
+  /*outline: none !important;*/
+  /*border-color: transparent;*/
 }
 .btn.fh5co-btn-icon {
   text-transform: none !important;
@@ -876,19 +877,21 @@ div#theme-switcher img {
 }
 .cta-btn {
     margin-left: 1em;
-    box-shadow: 3px 5px 0px 0px #2e2e2e;
+    /*box-shadow: 3px 5px 0px 0px #2e2e2e;*/
     padding: 10px;
     /*border-radius: 10px;*/
     font-size: 0.8em;
     color:#fff;
-    width:50%;
+    width:200px;
     height:50px;
     background:#efefef;
     margin: 20px 0 0 20px;
+    border: 1px solid #ccc;
 }
-.cta-btn:hover, .cta-btn:active, .cta-btn:focus, .cta-btn:visited {
-    color:#fff;
-    box-shadow: 3px 5px 0px 0px var(--primary-color);
+.cta-btn:hover {
+    background:#ccc;
+    /*color:#fff;*/
+    /*box-shadow: 3px 5px 0px 0px var(--primary-color);*/
     /*filter: brightness(1.1);*/
 }
 .cta-btn img {
@@ -994,8 +997,10 @@ div#theme-switcher img {
 #hero-whoami {
     /*background:var(--primary-color);*/
 
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    /*background-color: #FF3CAC;*/
+    /*background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);*/
+    background: rgb(0,123,211);
+    background: linear-gradient(90deg, rgba(0,123,211,1) 14%, rgba(177,88,90,1) 78%);
 
 
     box-decoration-break: clone;
@@ -1068,8 +1073,11 @@ small a {
 .page-section {
     /*border-bottom: 4px solid var(--dark-gray);*/
     margin-bottom: 1.5em;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    /*background-color: #FF3CAC;*/
+    /*background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);*/
+    background: rgb(177,88,90);
+    background: linear-gradient(90deg, rgba(177,88,90,1) 40%, rgba(0,123,211,1) 90%);
+
     padding-top:20px;
     margin-left: -100%; /* hidden by default, comes in with the slide anim */
 
