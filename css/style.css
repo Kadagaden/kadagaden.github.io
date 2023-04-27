@@ -3,7 +3,6 @@
 
 
 :root {
-    --primary-color:#b1585a;
     /*--primary-color: #347fc1;*/
     /*--primary-color: #B0585A;*/
     --btn-primary-text:#f5f5f5;
@@ -15,6 +14,8 @@
 
 
 html {
+/*--primary-color:#b1585a;*/
+--primary-color:#a52d30;
 /*--bg-color: #fff;*/
 --bg-color: #fbfbfb;
 --text-color: #2b2b2b;
@@ -31,9 +32,11 @@ html {
 --details-block-border:#dbdbdb;
 --dark-gray: #222;
 --lighter-color:rgb(255 255 255 / 100%);
+--shop-item-bg: #f1efef;
 }
 
 html[data-theme='dark'] {
+--primary-color:#e96e71;
 --bg-color: #252525;
 --text-color: #f5f5f5;
 --link-hover: var(--primary-color);
@@ -46,6 +49,7 @@ html[data-theme='dark'] {
 --filter-bg: #322d2d;
 --filter-active: #f5f5f5;
 --details-block:#322d2d;
+--shop-item-bg: #322d2d;
 --details-block-border:#505050;
 --dark-gray: #505050;
 --lighter-color:rgb(37 37 37 / 100%);
@@ -192,6 +196,7 @@ ul, ol {
   padding-left: 15px;
   line-height: 32px;
   margin-left: 15px;
+  list-style-type:square;
 }
 ul ul, ul ol, ol ul, ol ol {
   padding-left: 25px;
@@ -227,7 +232,7 @@ pre {
 
 
 #fh5co-header {
-  margin-top: 2em;
+  /*margin-top: 2em;*/
   margin-bottom: 3em;
 }
 @media screen and (max-width: 768px) {
@@ -272,7 +277,7 @@ pre {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
-  text-align: center;
+  text-align: right;
 }
 @media screen and (max-width: 992px) {
   #fh5co-main-nav ul {
@@ -308,9 +313,10 @@ pre {
   padding: 5px 0;
   margin: 0  10px;
   border-bottom: none;
-  font-size: 1.1em;
-  text-transform:uppercase;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.3em;
+  /*text-transform:uppercase;*/
+  /*font-family: 'Fira Sans Condensed', sans-serif;*/
+  font-family: 'Quicksand', sans-serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-main-nav ul > li > a {
@@ -999,17 +1005,25 @@ div#theme-switcher img {
 
     /*background-color: #FF3CAC;*/
     /*background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);*/
-    background: rgb(0,123,211);
-    background: linear-gradient(90deg, rgba(0,123,211,1) 14%, rgba(177,88,90,1) 78%);
-
+    /*background: rgb(0,123,211);*/
+    /*background: linear-gradient(90deg, rgba(0,123,211,1) 14%, rgba(177,88,90,1) 78%);*/
 
     box-decoration-break: clone;
-    color:var(--whoami-text);
+    color:var(--text-color);
     font-size: 30px;
     line-height: 38px;
     padding: 15px 0 15px 15px;
     margin-bottom: 1em;
     border-radius: 0% 100% 33% 67% / 100% 0% 100% 0%;
+    border:2px solid var(--text-color);
+}
+#hero-whoami:hover {
+    background: linear-gradient(90deg, rgba(0,123,211,1) 14%, rgba(177,88,90,1) 78%);
+    color:var(--whoami-text);
+    border:2px solid var(--bg-color);
+    cursor:default;
+    border-radius: 0;
+    transition: border-radius 1s linear;
 }
 @media screen and (max-width: 570px) {
     #hero-whoami {
@@ -1240,6 +1254,7 @@ span.copyToClipboard:hover {
     grid-template-columns: repeat(4, 1fr);
 }
 
+
 @media screen and (max-width: 768px) {
     #pGridCont {
     display: grid;
@@ -1278,3 +1293,52 @@ span.copyToClipboard:hover {
 
 /* fix bootstrap.css */
 #wGridCont:before {display:none;}
+
+/* SHOP & WORKS */
+
+.works-poster { max-width:500px;}
+.works-banner { max-width:700px;}
+.works-petscii { max-width:700px;}
+
+#pageTitle {
+    margin-bottom: 0.75em;
+    font-size:3em;
+    line-height: 2em;
+    border-bottom: 2px solid var(--dark-gray);
+}
+#pageTitleShopLink {color:var(--text-color)}
+
+#shopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#shopGrid div {
+    width:300px;
+    background:var(--shop-item-bg);
+    text-align:center;
+    padding: 0 2px 10px 2px;
+    margin-bottom: 15px;
+}
+#shopGrid div img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+#shopGrid div ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+#shopGrid div ul li {
+    padding-bottom:8px;
+}
+#shopGrid div ul li a {
+    color:var(--text-color);
+    border-bottom:1px solid var(--text-color);
+}
+.buyItOn {
+}
+.shopItemTitle {
+    font-weight:bold;
+}
