@@ -1306,7 +1306,14 @@ span.copyToClipboard:hover {
     line-height: 2em;
     border-bottom: 2px solid var(--dark-gray);
 }
-#pageTitleShopLink {color:var(--text-color)}
+#pageTitleLink {color:var(--text-color)}
+
+
+@media screen and (max-width: 768px) {
+    #pageTitle {font-size:2em;}
+    .works-banner, .works-petscii {max-width:500px;}
+}
+
 
 #shopGrid {
     display: grid;
