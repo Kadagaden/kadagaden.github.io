@@ -1012,7 +1012,7 @@ div#theme-switcher img {
     color:var(--text-color);
     font-size: 30px;
     line-height: 38px;
-    padding: 15px 0 15px 15px;
+    padding: 15px 25px 25px 15px;
     margin-bottom: 1em;
     border-radius: 0% 100% 33% 67% / 100% 0% 100% 0%;
     border:2px solid var(--text-color);
