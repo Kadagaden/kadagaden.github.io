@@ -7,7 +7,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-HYKY9BK8TT');
     </script>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     <meta name="description" content="Kadagaden: Indie Game Developer, Graphic Designer, Digital Artist" />
     <meta name="keywords" content="freelance, designer, graphic design, graphics, design, webdesign, web, design, digital art, art, artwok, chess, oss, open source software, open, software" />
     <meta name="author" content="Kadagaden" />
-    
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -27,26 +27,26 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#373fb7">
     <meta name="msapplication-TileColor" content="#373fb7">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!--<link rel="stylesheet" href="css/themify-icons.css">-->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    
+
     </head>
     <body>
-    
+
         <div id="theme-switcher">
             <img id="icon-dark" class="icon-theme-switcher" src="images/icon-moon.png" onclick="toggleTheme('dark');" data-toggle="tooltip" data-placement="left" title="Switch to dark theme" />
             <img id="icon-light" class="icon-theme-switcher" src="images/icon-sun.png" onclick="toggleTheme('light');" data-toggle="tooltip" data-placement="left" title="Switch to light theme" />
         </div>
-    
+
         <header id="fh5co-header" role="banner">
             <div class="container">
                 <div id="fh5co-logo">
@@ -66,34 +66,34 @@
                 </nav>
             </div>
         </header>
-    
+
         <main role="main">
-    
-    
+
+
              <div class="container">
-    
+
                 <!-- <div class="row">
                     <div class="col-md-12">
                         <p class="h4">TOP Supporters:</p>
                         <img src="images/supporter_logo_placeholder.png" alt="Supporter's logo">
                     </div>
                 </div> -->
-    
+
                 <div class="row">
                     <div class="col-md-12">
-    
+
                             <div id="pageTitle">Punk Duck Jumps</div>
                             <p>Punk Duck Jumps is my upcoming 3D platformer video game, currently under development. I'm working on it as a solo developer, but <a href="donate.html">you can help by supporting the development</a> if you'd like to. You can follow the development on my social accounts.
-                                                                                                                                                                                                <div class="iframe-container">                                                                                                                                                                    <iframe src="https://www.youtube.com/embed/t2mqxbyIWmA?si=y_YJ_AfsKSSzj3eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                                                                                                                                                                                </div>
+                                                                                                                                                                                                <div class="iframe-container"><iframe src="https://www.youtube.com/embed/xgGUUUT6jek?si=97bbz9IOpaVOUkls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                                                                                                                                                                                </div>
+
                     </div>
                 </div>
-    
+
             </div>
-    
+
             <div class="fh5co-spacer fh5co-spacer-sm"></div>
-    
-    
+
+
     <!-- Start  Footer -->
             <footer id="fh5co-footer" role="contentinfo">
                 <div class="container">
@@ -118,34 +118,34 @@
             <!-- End  Footer -->
             <!-- Go To Top -->
             <div class="fh5co-gotop"><i class="fa-solid fa-up-long"></i></div>
-    
+
         </main>
-    
+
         <!--------------- JS, SCRIPTS ------------------------------------->
-    
+
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/bootstrap.js"></script>
-    
+
         <script>
-    
+
         // ------------------------------
         // ----- THEME SWITCHER     -----
         // ------------------------------
-    
+
         // Capture the current theme from local storage and adjust the page to use the current theme.
         const htmlEl = document.getElementsByTagName('html')[0];
         const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-    
+
         if (currentTheme) {
             htmlEl.dataset.theme = currentTheme;
         }
-    
+
         // When the user changes the theme, we need to save the new value on local storage
         const toggleTheme = (theme) => {
             htmlEl.dataset.theme = theme;
             localStorage.setItem('theme', theme);
         }
-    
+
         if (localStorage.getItem("theme") === null) {
             $('#icon-dark').show();
         }
@@ -157,23 +157,23 @@
             $('#icon-light').hide();
             $('#icon-dark').show();
         }
-    
+
         $('#icon-dark').on('click', function() {
             $(this).hide();
             $('#icon-light').show();
         });
-    
+
         $('#icon-light').on('click', function() {
             $(this).hide();
             $('#icon-dark').show();
         });
-    
-    
+
+
         //tooltip from bootstrap
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
-    
+
         // ------------------------------
         // ----- SMOOTH SCROLL ICON -----
         // ------------------------------
@@ -184,13 +184,13 @@
                 $('.fh5co-gotop').hide();
             }
         });
-    
+
         $(".fh5co-gotop").click(function(){
             $("html, body").animate({ scrollTop: 0 });
         });
-    
-    
+
+
         </script>
-    
+
     </body>
     </html>
