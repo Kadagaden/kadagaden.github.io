@@ -1,1 +1,7 @@
 .idea/
+node_modules/
+_site/
+.eleventy.js
+package.json
+package-lock.json
+src/
