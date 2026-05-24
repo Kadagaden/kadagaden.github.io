@@ -3,8 +3,6 @@
 
 
 :root {
-    /*--primary-color: #347fc1;*/
-    /*--primary-color: #B0585A;*/
     --btn-primary-text:#f5f5f5;
     --btn-primary-text-hover:#f5f5f5;
     --btn-primary-hover:#BF6062;
@@ -14,11 +12,8 @@
 
 
 html {
-/*--primary-color:#b1585a;*/
-/*--primary-color:#dd5900;*/
-/*--bg-color: #fff;*/
-/*--primary-color:#008e99;*/
---primary-color:#db5353;
+
+--primary-color:#4b7a4e;
 --bg-color: #fbfbfb;
 --text-color: #2b2b2b;
 --link-hover: var(--text-color);
@@ -34,14 +29,14 @@ html {
 --details-block-border:#dbdbdb;
 --dark-gray: #222;
 --lighter-color:rgb(255 255 255 / 100%);
---shop-item-bg: #f1efef;
+--shop-item-bg: #f5f5f5;
 --pattern-color:#e7e6e6;
+--footer-bg: #f4f4f4;
 }
 
+
 html[data-theme='dark'] {
-/* --primary-color:#e96e71; */
-/*--primary-color:#ffb380;*/
---primary-color:#e57979;
+--primary-color:#749477;
 --bg-color: #252525;
 --text-color: #f5f5f5;
 --link-hover: var(--primary-color);
@@ -54,11 +49,12 @@ html[data-theme='dark'] {
 --filter-bg: #322d2d;
 --filter-active: #f5f5f5;
 --details-block:#322d2d;
---shop-item-bg: #322d2d;
+--shop-item-bg: #2a2a2a;
 --details-block-border:#505050;
 --dark-gray: #505050;
 --lighter-color:rgb(37 37 37 / 100%);
 --pattern-color: #3e3e3e;
+--footer-bg: #2a2a2a;
 }
 
 
@@ -284,8 +280,7 @@ pre {
   margin-left: auto;
   margin-right: auto;
   width: 800px;
-  /*background: var(--shape-color);*/
-  border-bottom: 3px solid #db5353;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 992px) {
   #fh5co-main-nav ul {
@@ -489,14 +484,10 @@ pre {
 }
 
 #fh5co-footer {
-padding-top: 4em;
-  padding-bottom: 2em;
+  padding: 1em 0;
+  background: var(--footer-bg);
 }
-@media screen and (max-width: 768px) {
-  #fh5co-footer {
-    padding-bottom: 1em;
-  }
-}
+
 #fh5co-footer .fh5co-footer-social {
   padding: 0;
   margin: 0 0 2em 0;
@@ -714,14 +705,11 @@ div#theme-switcher img {
 }
 .hero-sub {
     font-weight:600;
-    /*background: var(--shape-color);*/
     color: var(--text-color);
     padding: 0.1em;
-    border-bottom: 3px solid #db5353;
+    /* border-bottom: 3px solid #d0d0d0; */
 }
 .sidecol {
-    margin-left:20px;
-    margin-right:10px;
     flex:50%;
 }
 
@@ -879,7 +867,7 @@ div#theme-switcher img {
 }
 
 
-#contact {margin-top:0.7em;}
+#contact {margin-top:1.5em;}
 
 .img-responsive, .owl-item {
     /*border: 1px dotted var(--pic-frame-color);*/
@@ -979,8 +967,8 @@ div#theme-switcher img {
     }
 
     .wp_collage {
-      width: 400px;
-      max-width: 400px;
+      width: 350px;
+      max-width: 350px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -1045,8 +1033,8 @@ div#theme-switcher img {
     color:var(--text-color);
     font-size: 30px;
     line-height: 38px;
-    padding: 15px 25px 25px 15px;
-    margin-bottom: 1em;
+    /* padding: 15px 25px 25px 15px; */
+    margin: 0.1em 0 2em 0;
     /* border-radius: 0% 100% 33% 67% / 100% 0% 100% 0%; */
     /* border:2px solid var(--text-color); */
 }
@@ -1243,9 +1231,7 @@ span.copyToClipboard:hover {
     margin-bottom:2em;
 }
 #fh5co-footer .container {
-    /*border-top: 4px solid var(--dark-gray);*/
-    border-top: 3px solid var(--primary-color);
-    padding-top: 1em;
+    margin-top: 1em;
 }
 @media screen and (min-width: 768px) {
     .share-wrap {float:right;}
@@ -1339,18 +1325,13 @@ span.copyToClipboard:hover {
     margin-bottom: 0.75em;
     font-size:1.5em;
     line-height: 1.5em;
-    /* border-bottom: 2px solid var(--dark-gray); */
-    /*background: var(--shape-color);*/
     background-color: var(--bg-color);
     opacity: 0.8;
-    background-image:  linear-gradient(var(--pattern-color) 1.1px, transparent 1.1px), linear-gradient(to right, var(--pattern-color) 1.1px, var(--bg-color) 1.1px);
     background-size: 22px 22px;
     color: var(--text-color);
-    padding: 0.1em 0.1em 0.1em 0.3em;
-    border-bottom: 3px solid #db5353;
 
 }
-#pageTitleLink {color:#000; font-weight:600;}
+#pageTitleLink {color:var(--primary-color); font-weight:600;}
 
 
 @media screen and (max-width: 768px) {
@@ -1360,10 +1341,6 @@ span.copyToClipboard:hover {
 @media screen and (max-width: 640px) {
 
     #pageTitle {font-size:1.5em;}
-}
-@media screen and (max-width: 430px) {
-
-    #pageTitle {font-size:1em;}
 }
 
 
