@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,400;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,700;1,400;1,600;1,700&display=swap');
 
 html {
 
@@ -369,6 +368,7 @@ pre {
     font-weight:700;
     font-size:80px;
     line-height:90px;
+    font-style: italic;
 }
 @media screen and (max-width: 768px) {
 .fh5co-intro .container h1 {
