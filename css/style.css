@@ -60,6 +60,7 @@ html[data-theme='dark'] {
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 html {
     transition: color 500ms, background-color 500ms;
@@ -70,6 +71,9 @@ html[data-theme='dark'] .icon-theme-switcher {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -82,6 +86,9 @@ body {
     /*background-image: repeating-linear-gradient(45deg, #f1f1f1 0, #f1f1f1 0.7000000000000001px, #ffffff 0, #ffffff 70%);*/
 }
 
+main[role="main"] {
+  flex: 1;
+}
 
 ::-webkit-selection {
   color: var(--selection-text);
@@ -234,8 +241,13 @@ pre {
 .row {margin-left:0;margin-right:0;}
 
 
+#fh5co-header > .container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 #fh5co-header {
-  /*margin-top: 2em;*/
+  margin-top: 2em;
   margin-bottom: 3em;
 }
 @media screen and (max-width: 768px) {
@@ -244,13 +256,13 @@ pre {
   }
 }
 #fh5co-header #fh5co-logo {
-  float: left;
   position: relative;
   z-index: 102;
   display: block;
   width:80px;
   height:80px;
   box-shadow: 0px 0px 0px 1px #2e2e2e;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-logo {
@@ -260,8 +272,11 @@ pre {
 
 #fh5co-main-nav {
   position: relative;
-  margin-top: 24px;
-  float:right;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #fh5co-main-nav #fh5co-nav {
   position: relative;
@@ -269,17 +284,12 @@ pre {
 }
 @media screen and (max-width: 768px) {
   #fh5co-main-nav {
-    text-align: left;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 #fh5co-main-nav ul {
   padding: 25px 0 10px 20px;
   margin: -23px 0 7px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 992px) {
@@ -293,9 +303,8 @@ pre {
 }
 @media screen and (max-width: 768px) {
   #fh5co-main-nav ul {
-    text-align: right;
-    margin-left: inherit;
-    margin-right: inherit;
+    width: 100%;
+    text-align: left;
   }
 }
 #fh5co-main-nav ul > li {
@@ -353,10 +362,14 @@ pre {
 @media screen and (max-width: 768px) {
   #fh5co-main-nav {
     position: relative;
-    top: 0px;
-    text-align: right;
-    display: inline-block;
-    float: right;
+    top: 0;
+    display: flex;
+    float: none;
+    width: 100%;
+  }
+  #fh5co-main-nav #theme-switcher {
+    margin-left: auto;
+    padding-right: 1em;
   }
 }
 
@@ -663,10 +676,11 @@ pre {
 /* --------------------------------------------------------------------------*/
 /* ADDED */
 /* --------------------------------------------------------------------------*/
-div#theme-switcher {
-    text-align:right;
-    padding-top:0.5em;
-    padding-right:1em;
+#fh5co-main-nav #theme-switcher {
+    flex-shrink: 0;
+    white-space: nowrap;
+    text-align: right;
+    padding: 0;
 }
 div#theme-switcher img {
     cursor:pointer;
