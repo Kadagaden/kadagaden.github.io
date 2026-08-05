@@ -38,6 +38,9 @@
             <div id="fh5co-logo">
                 <a href="../index.html"><img src="../images/logo.png" id="logo" alt="Logo"></a>
             </div>
+            <button id="fh5co-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav id="fh5co-main-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -133,6 +136,26 @@
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
+
+    // Mobile menu toggle
+    (function(){
+        var t = document.getElementById('fh5co-menu-toggle');
+        var n = document.getElementById('fh5co-main-nav');
+        if (t && n) {
+            t.addEventListener('click', function(){
+                var open = n.classList.toggle('open');
+                t.setAttribute('aria-expanded', open);
+                t.querySelector('i').className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            });
+            n.querySelectorAll('ul a').forEach(function(link){
+                link.addEventListener('click', function(){
+                    n.classList.remove('open');
+                    t.setAttribute('aria-expanded', 'false');
+                    t.querySelector('i').className = 'fa-solid fa-bars';
+                });
+            });
+        }
+    })();
 
     // Copy to clipboard
     $(".copyToClipboard").click(function(){

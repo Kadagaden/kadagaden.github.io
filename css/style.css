@@ -198,6 +198,12 @@ pre {
 /* override bootstrap's row margin */
 .row {margin-left:0;margin-right:0;}
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 @media screen and (min-width: 769px) {
     #fh5co-menu-toggle {
@@ -532,13 +538,20 @@ div#theme-switcher img {
 }
 
 .wp_collage {
-    width: 700px;
+    width: 100%;
     max-width: 700px;
+    height: auto;
+}
+
+.wp-single {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
     .wp_collage {
-      width: 350px;
+      width: 100%;
       max-width: 350px;
     }
 }
@@ -570,9 +583,9 @@ div#theme-switcher img {
 
 /* SHOP & WORKS */
 
-.works-poster { max-width:500px;}
-.works-banner { max-width:700px;}
-.works-petscii { max-width:700px;}
+.works-poster { max-width:500px; width:100%; height:auto;}
+.works-banner { max-width:700px; width:100%; height:auto;}
+.works-petscii { max-width:700px; width:100%; height:auto;}
 
 #pageTitle {
     font-weight:600;
@@ -604,7 +617,8 @@ div#theme-switcher img {
     grid-template-columns: repeat(3, 1fr);
 }
 #shopGrid div {
-    width:300px;
+    width:100%;
+    max-width:300px;
     background:var(--shop-item-bg);
     text-align:center;
     padding: 0 2px 10px 2px;
